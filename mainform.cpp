@@ -150,7 +150,10 @@ void MainForm::on_treeWidget_itemDoubleClicked(QTreeWidgetItem* item, int column
     if(file.exists())
     {
         if (file.open(QFile::ReadOnly | QFile::Text))
+        {
             ui->editor->setPlainText(file.readAll());
+            ui->tabWidget->setTabText(ui->tabWidget->currentIndex(),file.fileName());
+        }
     }
 }
 

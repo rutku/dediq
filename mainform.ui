@@ -239,7 +239,7 @@
           </sizepolicy>
          </property>
          <attribute name="title">
-          <string>main.d</string>
+          <string>Welcome</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
