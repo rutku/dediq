@@ -1,0 +1,9 @@
++ Kod renklendirmek ( Temel kısım halledildi)
++ Proje yönetim penceresi
++ Proje oluşturma, açma ve kaydetme butonları
+- Yeni proje dialog penceresi
+- Proje yönetim sınıfı
+- Proje yönetim penceresinde sadece projeleri görüntületmek
+- Projenin kullanacağı kütüphaneleri proje kaydına almak
+- Projeyi derlemek
+- Birden fazla dosya açıldığında metin editörüne aktarmak ve comboboxsa koymak.

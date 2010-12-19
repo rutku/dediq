@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/editor/icons">
+        <file>app_icons/bt_play.png</file>
+        <file>app_icons/save.png</file>
+        <file>app_icons/iFolder_add.png</file>
+        <file>app_icons/iFolder.png</file>
+        <file>app_icons/bt_stop.png</file>
+    </qresource>
+</RCC>
