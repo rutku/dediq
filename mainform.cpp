@@ -170,9 +170,9 @@ void MainForm::on_treeWidget_customContextMenuRequested(QPoint pos)
 
     QMenu *menu = new QMenu(this);
     menu->addAction("File Add",this,SLOT(rightM_OnFileAdd()));
-    menu->addAction("Copy");
-    menu->addAction("Cut");
-    menu->addAction("Delete");
+    menu->addAction("Copy",this,SLOT(rightM_OnFileCopy()));
+    menu->addAction("Cut",this,SLOT(rightM_OnFileCut()));
+    menu->addAction("Delete",this,SLOT(rightM_OnFileDelete()));
     menu->addAction("Reflactor");
     menu->exec(ui->treeWidget->viewport()->mapToGlobal(pos));
     delete menu;
@@ -180,5 +180,20 @@ void MainForm::on_treeWidget_customContextMenuRequested(QPoint pos)
 
 void MainForm::rightM_OnFileAdd()
 {
-    ui->editor->setText("sag klik");
+
+}
+
+void MainForm::rightM_OnFileCut()
+{
+
+}
+
+void MainForm::rightM_OnFileDelete()
+{
+
+}
+
+void MainForm::rightM_OnFileCopy()
+{
+
 }
