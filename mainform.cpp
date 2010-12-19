@@ -29,6 +29,11 @@ void MainForm::setupEditor(){
     highlighter = new Highlighter(ui->editor->document());
 }
 
+struct projectFile{
+    QString name;
+    QString path;
+
+};
 
 void MainForm::on_openFile_activated()
 {
@@ -152,7 +157,7 @@ void MainForm::on_treeWidget_itemDoubleClicked(QTreeWidgetItem* item, int column
         if (file.open(QFile::ReadOnly | QFile::Text))
         {
             ui->editor->setPlainText(file.readAll());
-            ui->tabWidget->setTabText(ui->tabWidget->currentIndex(),file.fileName());
+            ui->tabWidget->setTabText(ui->tabWidget->currentIndex(),item->text(column));
         }
     }
 }
@@ -164,7 +169,7 @@ void MainForm::on_treeWidget_customContextMenuRequested(QPoint pos)
         return;
 
     QMenu *menu = new QMenu(this);
-    menu->addAction("File Add");
+    menu->addAction("File Add",this,SLOT(rightM_OnFileAdd()));
     menu->addAction("Copy");
     menu->addAction("Cut");
     menu->addAction("Delete");
@@ -173,3 +178,7 @@ void MainForm::on_treeWidget_customContextMenuRequested(QPoint pos)
     delete menu;
 }
 
+void MainForm::rightM_OnFileAdd()
+{
+    ui->editor->setText("sag klik");
+}

@@ -299,9 +299,9 @@
         <property name="currentIndex">
          <number>0</number>
         </property>
-        <widget class="QWidget" name="tab_2">
+        <widget class="QWidget" name="tabName2">
          <attribute name="title">
-          <string>Tab 1</string>
+          <string>Output</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>

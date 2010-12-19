@@ -40,7 +40,7 @@ private slots:
     void on_MainForm_destroyed();
     void on_btn_save_clicked();
     void on_btn_newProject_clicked();
-
+    void rightM_OnFileAdd();
 
 
 };
